@@ -67,10 +67,10 @@ class CatchCourse
 
         if (preg_match('/(alert)/', $contents)) {
             $this->status = -1;
-            if (preg_match('/密码错误/', $contents))
-                throw new \Exception('error password');
-            elseif (preg_match('/用户不存在/', $contents)) {
-                throw new \Exception('error user');
+            if (preg_match('//i', $contents))
+                die("密码错误");
+            elseif (preg_match('/用户名不存在/i', $contents)) {
+                die("用户名不存在");
             }
             return false;
         }

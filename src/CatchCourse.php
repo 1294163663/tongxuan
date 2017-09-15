@@ -74,6 +74,7 @@ class CatchCourse
             }
             return false;
         }
+        self::pout("登录成功");
         $this->status = 1;
         return true;
     }

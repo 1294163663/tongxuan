@@ -152,6 +152,11 @@ class CatchCourse
 
             for ($i = 0; $i < 10; $i++) {
                 $result = $this->curl($courseUrl, $post);
+                if ($this->is_logout($result)) {
+                    $this->status = 0;
+                    return $this->catch_course($params);
+                }
+
                 $result = mb_convert_encoding($result, 'UTF-8', 'GBK,UTF-8,ASCII');
 
                 if (preg_match_all('/alert\(\'(.*?)\'\);/i', $result, $alt)) {
@@ -160,6 +165,7 @@ class CatchCourse
                     }
                 } elseif (preg_match_all('/三秒防刷/',$result)) {
                     self::pout("被三秒防刷,正在重试");
+                    sleep(3);
                 }else {
                     self::pout("继续选课");
                 }
@@ -192,6 +198,7 @@ class CatchCourse
             'dpkcmcGrid:txtChoosePage' => isset($params['page'])? $params['page'] : 1,
             'dpkcmcGrid:txtPageSize' => isset($params['page_size'])? $params['page_size'] : $amount,
             'Button1' => '++%CC%E1%BD%BB++',
+            'ddl_ywyl' => '',
         ];
 
         $goalPage = $result = $this->curl($courseUrl, $post);
@@ -211,7 +218,7 @@ class CatchCourse
 
     public function is_logout($content)
     {
-        if (preg_match('/object move/i', $content)) {
+        if (preg_match('/object mov/i', $content)) {
             return true;
         }
         return false;
@@ -228,12 +235,12 @@ class CatchCourse
 
     public function test_current_course($content)
     {
-        preg_match_all('/<td\>.*退选 <\/a><\/td>/i', $content, $course);
-        self::pout("当前共选中" . count($course[0]) . "门课程");
-        foreach ($course[0] as $value) {
+        preg_match_all('/已选课程[\w\W]*?<tr class=\"datelisthead\"\>[\w\W]*?<\/tr\>(<tr\>[\w\W]*?<\/tr\>){0,2}/i', $content, $course);
+        self::pout("当前共选中" . count($course[1]) . "门课程");
+        foreach ($course[1] as $value) {
             self::pout($value);
         }
-        if (count($course[0]) >= 2) {
+        if (count($course[1]) >= 2) {
             exit("选课完毕");
         }
     }

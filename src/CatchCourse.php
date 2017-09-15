@@ -148,13 +148,14 @@ class CatchCourse
     {
         if ($this->status) {
             $courseUrl = 'http://' . URL . '/' . $this->rndnum . '/xf_xsqxxxk.aspx?xh='. $this->account .'&xm='. $this->name .'&gnmkdm=N121103';
+            ReCatch:
             $post = $this->get_catch_post($params);
-
             for ($i = 0; $i < 10; $i++) {
                 $result = $this->curl($courseUrl, $post);
                 if ($this->is_logout($result)) {
-                    $this->status = 0;
-                    return $this->catch_course($params);
+                    self::pout("重新登录");
+                    $this->login();
+                    goto ReCatch;
                 }
 
                 $result = mb_convert_encoding($result, 'UTF-8', 'GBK,UTF-8,ASCII');
@@ -165,7 +166,7 @@ class CatchCourse
                     }
                 } elseif (preg_match_all('/三秒防刷/',$result)) {
                     self::pout("被三秒防刷,正在重试");
-                    sleep(4);
+                    goto ReCatch;
                 }else {
                     self::pout("继续选课");
                 }
@@ -181,12 +182,13 @@ class CatchCourse
     public function get_catch_post($params)
     {
         $courseUrl = 'http://' . URL . '/' . $this->rndnum . '/xf_xsqxxxk.aspx?xh='. $this->account .'&xm='. $this->name .'&gnmkdm=N121103';
+        T:
         $coursePage = $this->curl($courseUrl);
         $coursePage = mb_convert_encoding($coursePage, 'UTF-8', 'GBK,UTF-8,ASCII');
         $__VIEWSTATE = $this->get_view($coursePage);
         if ($this->is_logout($coursePage) || !$__VIEWSTATE) {
-            $this->status = 0;
-            return $this->catch_course($params);
+            $this->login();
+            goto T;
         }
 
         $this->test_current_course($coursePage);
@@ -204,8 +206,8 @@ class CatchCourse
         $goalPage = $result = $this->curl($courseUrl, $post);
         $__VIEWSTATE0 = $this->get_view($goalPage);
         if ($this->is_logout($goalPage) || !$__VIEWSTATE0) {
-            $this->status = 0;
-            return $this->catch_course($params);
+            $this->login();
+            goto T;
         }
 
         $post['__VIEWSTATE'] = $__VIEWSTATE0;

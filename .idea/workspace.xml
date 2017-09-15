@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f2e361c-fe93-4d91-88f3-bd1ba29332ee" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catch.php" afterPath="$PROJECT_DIR$/catch.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CatchCourse.php" afterPath="$PROJECT_DIR$/src/CatchCourse.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="catch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -57,8 +58,8 @@
       <file leaf-file-name="CatchCourse.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CatchCourse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="192" selection-end-column="9" />
+            <state relative-caret-position="500">
+              <caret line="242" column="40" lean-forward="true" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -80,8 +81,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/catch_page.php" />
-        <option value="$PROJECT_DIR$/catch.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/catch.php" />
         <option value="$PROJECT_DIR$/src/CatchCourse.php" />
       </list>
     </option>
@@ -177,7 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1505312109041</updated>
       <workItem from="1505312110811" duration="1898000" />
-      <workItem from="1505445711333" duration="5915000" />
+      <workItem from="1505445711333" duration="7499000" />
     </task>
     <task id="LOCAL-00001" summary="add some desc how to use">
       <created>1505313670869</created>
@@ -214,11 +215,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505455239065</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="second catch' bug fix">
+      <created>1505455644793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1505455644793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7813000" />
+    <option name="totallyTimeSpent" value="9397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="6" width="1920" height="1054" extended-state="6" />
@@ -312,14 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catch_page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -328,10 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catch.php">
+    <entry file="file://$PROJECT_DIR$/src/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -344,10 +344,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CatchCourse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="192" selection-end-column="9" />
+        <state relative-caret-position="500">
+          <caret line="242" column="40" lean-forward="true" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
           <folding />
         </state>
       </provider>

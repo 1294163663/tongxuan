@@ -238,7 +238,7 @@ class CatchCourse
 
     public function test_current_course($content)
     {
-        preg_match_all('/已选课程[\w\W]*?<tr class=\"datelisthead\"\>[\w\W]*?<\/tr\>(<tr\>[\w\W]*?<\/tr\>){0,2}/i', $content, $course);
+        preg_match_all('/已选课程[\w\W]*?<tr class=\"datelisthead\"\>[\w\W]*?<\/tr\>(<tr\>[\w\W]*?<td\>[\w\W]*?<\/tr\>){0,2}/i', $content, $course);
         self::pout("当前共选中" . count($course[1]) . "门课程");
         foreach ($course[1] as $value) {
             self::pout($value);

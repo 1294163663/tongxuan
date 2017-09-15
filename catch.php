@@ -18,6 +18,7 @@ $account = $_GET['account'];
 $password = $_GET['password'];
 $key = $_GET['key'];
 
+CatchCourse::pout("开始选课，等待登录");
 $catch = new CatchCourse($account, $password);
 $arr = explode('-', $key);
 while (1) {

@@ -165,7 +165,7 @@ class CatchCourse
                     }
                 } elseif (preg_match_all('/三秒防刷/',$result)) {
                     self::pout("被三秒防刷,正在重试");
-                    sleep(3);
+                    sleep(4);
                 }else {
                     self::pout("继续选课");
                 }

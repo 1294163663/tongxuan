@@ -258,7 +258,7 @@ class CatchCourse
         self::pout("当前共选中" .$sum . "门课程");
 
         if (count($course[1]) >= 2) {
-            exit("选课完毕");
+            exit("<span class='alert-danger'>选课完毕</span>");
         }
     }
 

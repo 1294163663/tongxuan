@@ -67,8 +67,8 @@
       <file leaf-file-name="CatchCourse.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CatchCourse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+            <state relative-caret-position="524">
+              <caret line="260" column="56" lean-forward="false" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -202,7 +202,7 @@
       <workItem from="1505445711333" duration="8113000" />
       <workItem from="1505481350281" duration="3340000" />
       <workItem from="1505527276799" duration="32000" />
-      <workItem from="1505618330412" duration="2225000" />
+      <workItem from="1505618330412" duration="2285000" />
     </task>
     <task id="LOCAL-00001" summary="add some desc how to use">
       <created>1505313670869</created>
@@ -267,11 +267,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505620357919</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="edit color of course">
+      <created>1505620574643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1505620574643</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15608000" />
+    <option name="totallyTimeSpent" value="15668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1054" extended-state="6" />
@@ -306,7 +313,8 @@
     <MESSAGE value="add some desc how to use" />
     <MESSAGE value="second catch' bug fix" />
     <MESSAGE value="fix notice massage and iframe's heith" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix notice massage and iframe's heith" />
+    <MESSAGE value="edit color of course" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit color of course" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CatchCourse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+        <state relative-caret-position="524">
+          <caret line="260" column="56" lean-forward="false" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="56" />
           <folding />
         </state>
       </provider>

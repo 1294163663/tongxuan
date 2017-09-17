@@ -67,11 +67,12 @@ class CatchCourse
 
         if (preg_match('/(alert)/', $contents)) {
             $this->status = -1;
-            if (preg_match('//i', $contents))
+            if (preg_match('/密码错误/i', $contents))
                 die("密码错误");
             elseif (preg_match('/用户名不存在/i', $contents)) {
                 die("用户名不存在");
             }
+            $this->status = 0;
             return false;
         }
         self::pout("登录成功");
@@ -128,21 +129,26 @@ class CatchCourse
 
     public function get_name()
     {
-        //step4:获取查询成绩的链接,以及姓名学号
-        $url = 'http://' . URL . '/' . $this->rndnum . '/xs_main.aspx?xh=' . $this->account;
-        $contents = $this->curl($url);
+        if ($this->status) {
+            //step4:获取查询成绩的链接,以及姓名学号
+            $url = 'http://' . URL . '/' . $this->rndnum . '/xs_main.aspx?xh=' . $this->account;
+            $contents = $this->curl($url);
 
-        $pattern = "/<a href=\"xscjcx.aspx\?(.*)\" target='zhuti'/U";
-        if (!preg_match($pattern, $contents, $matches)) {
-            return;
-        }
-        if (!$matches[1]) {
-            return;
-        }
+            $pattern = "/<a href=\"xscjcx.aspx\?(.*)\" target='zhuti'/U";
+            if (!preg_match($pattern, $contents, $matches)) {
+                return;
+            }
+            if (!$matches[1]) {
+                return;
+            }
 
-        $url1 = $matches[1];
-        $arr = explode('=', $url1);
-        $this->name = $contents = explode('&', $arr[2])[0];
+            $url1 = $matches[1];
+            $arr = explode('=', $url1);
+            $this->name = $contents = explode('&', $arr[2])[0];
+        } else {
+            $this->login();
+            $this->get_name();
+        }
     }
 
     public function catch_course($params)

@@ -248,17 +248,17 @@ class CatchCourse
 
         $sum = 0;
         if ($course[1][0]) {
-            self::pout('<span class="text-success">'.$course[1][0].'</span>');
+            self::pout('<span style="color: blue">'.$course[1][0].'</span>');
             $sum = $sum +1;
         }
         if ($course[2][0]) {
-            self::pout('<span class="text-success">'.$course[2][0].'</span>');
+            self::pout('<span style="color: blue">'.$course[2][0].'</span>');
             $sum = $sum +1;
         }
         self::pout("当前共选中" .$sum . "门课程");
 
         if (count($course[1]) >= 2) {
-            exit("<span class='alert-danger'>选课完毕</span>");
+            exit("<span style='color: red'>选课完毕</span>");
         }
     }
 

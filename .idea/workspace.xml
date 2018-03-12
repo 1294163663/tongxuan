@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f2e361c-fe93-4d91-88f3-bd1ba29332ee" name="Default" comment="" />
+    <list default="true" id="5f2e361c-fe93-4d91-88f3-bd1ba29332ee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catch.php" afterPath="$PROJECT_DIR$/catch.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="catch.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="583">
+              <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -106,7 +108,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="9003" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="173" />
     <option name="y" value="74" />
     <option name="width" value="1707" />
@@ -190,7 +192,7 @@
       <workItem from="1505481350281" duration="3340000" />
       <workItem from="1505527276799" duration="32000" />
       <workItem from="1505618330412" duration="2436000" />
-      <workItem from="1520868010471" duration="2351000" />
+      <workItem from="1520868010471" duration="2722000" />
     </task>
     <task id="LOCAL-00001" summary="add some desc how to use">
       <created>1505313670869</created>
@@ -280,10 +282,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18170000" />
+    <option name="totallyTimeSpent" value="18541000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -559,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="583">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding />
         </state>
       </provider>

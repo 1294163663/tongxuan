@@ -20,9 +20,10 @@ if (preg_match('/^2017/', $_GET['account']) && empty($_GET['year'])) {
 $account = $_GET['account'];
 $password = $_GET['password'];
 $key = $_GET['key'];
-$place = isset($_GET['place']) ? : 1;
+$place = isset($_GET['place']) ? $_GET['place'] : 1;
 
-CatchCourse::pout("开始选课，等待登录" . $place==1?'--北校区':'南校区');
+$placeStr = $place==1?'--北校区':'--南校区';
+CatchCourse::pout("开始选课，等待登录"  . $placeStr);
 $catch = new CatchCourse($account, $password);
 $arr = explode('-', $key);
 while (1) {

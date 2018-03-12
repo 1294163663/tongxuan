@@ -203,7 +203,7 @@ class CatchCourse
 
         $post = [
             '__VIEWSTATE' => $__VIEWSTATE,
-            'ddl_xqbs' => 1,
+            'ddl_xqbs' => isset($params['place']) ? $params['place'] : 1,
             'dpkcmcGrid:txtChoosePage' => isset($params['page'])? $params['page'] : 1,
             'dpkcmcGrid:txtPageSize' => isset($params['page_size'])? $params['page_size'] : $amount,
             'Button1' => '++%CC%E1%BD%BB++',
@@ -244,7 +244,7 @@ class CatchCourse
 
     public function test_current_course($content)
     {
-        preg_match_all('/已选课程[\w\W]*?<tr class=\"datelisthead\"\>[\w\W]*?<\/tr\>(<tr\>[\w\W]*?<td\>[\w\W]*?<\/tr\>)?(<tr\>[\w\W]*?<td\>[\w\W]*?<\/tr\>)?/i', $content, $course);
+        preg_match_all('/已选课程[\w\W]*?<tr class=\"datelisthead\"\>[\w\W]*?<\/tr\>(<tr\>[\w\W]*?<td\>[\w\W]*?<\/tr\>)?(<tr[\w\W]*?\>[\w\W]*?<td\>[\w\W]*?<\/tr\>)?/i', $content, $course);
 
         $sum = 0;
         if ($course[1][0]) {
@@ -257,7 +257,7 @@ class CatchCourse
         }
         self::pout("当前共选中" .$sum . "门课程");
 
-        if (count($course[1]) >= 2) {
+        if ($sum >= 5) {
             exit("<span style='color: red'>选课完毕</span>");
         }
     }

@@ -22,7 +22,7 @@ $password = $_GET['password'];
 $key = $_GET['key'];
 $place = isset($_GET['place']) ? : 1;
 
-CatchCourse::pout("开始选课，等待登录");
+CatchCourse::pout("开始选课，等待登录" . $place==1?'--北校区':'南校区');
 $catch = new CatchCourse($account, $password);
 $arr = explode('-', $key);
 while (1) {

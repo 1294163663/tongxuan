@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f2e361c-fe93-4d91-88f3-bd1ba29332ee" name="Default" comment="">
+    <list default="true" id="5f2e361c-fe93-4d91-88f3-bd1ba29332ee" name="Default" comment="fix bug about n and s">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catch.php" afterPath="$PROJECT_DIR$/catch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CatchCourse.php" afterPath="$PROJECT_DIR$/src/CatchCourse.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catch.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="catch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catch.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="768">
@@ -55,15 +54,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CatchCourse.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CatchCourse.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CatchCourse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="203" column="17" lean-forward="false" selection-start-line="203" selection-start-column="17" selection-end-line="203" selection-end-column="17" />
+            <state relative-caret-position="601">
+              <caret line="184" column="27" lean-forward="true" selection-start-line="184" selection-start-column="27" selection-end-line="184" selection-end-column="27" />
               <folding>
-                <marker date="1520869800152" expanded="true" signature="7497:7508" ph="..." />
-                <marker date="1520869800152" expanded="true" signature="7642:7653" ph="..." />
-                <marker date="1520869800152" expanded="true" signature="7821:7831" ph="..." />
+                <marker date="1520906113238" expanded="true" signature="7599:7610" ph="..." />
+                <marker date="1520906113238" expanded="true" signature="7750:7761" ph="..." />
+                <marker date="1520906113238" expanded="true" signature="7960:7970" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,6 +77,7 @@
       <find>login</find>
       <find>ddl_xqbs</find>
       <find>place</find>
+      <find>pout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,9 +89,9 @@
       <list>
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/catch_page.php" />
-        <option value="$PROJECT_DIR$/src/CatchCourse.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/catch.php" />
+        <option value="$PROJECT_DIR$/src/CatchCourse.php" />
       </list>
     </option>
   </component>
@@ -195,7 +195,7 @@
       <workItem from="1505527276799" duration="32000" />
       <workItem from="1505618330412" duration="2436000" />
       <workItem from="1520868010471" duration="2722000" />
-      <workItem from="1520904879984" duration="562000" />
+      <workItem from="1520904879984" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="add some desc how to use">
       <created>1505313670869</created>
@@ -281,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520870359228</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix bug about n and s">
+      <created>1520905468868</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1520905468868</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19103000" />
+    <option name="totallyTimeSpent" value="19837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -323,7 +330,8 @@
     <MESSAGE value="fix notice massage and iframe's heith" />
     <MESSAGE value="edit color of course" />
     <MESSAGE value="add s and n" />
-    <option name="LAST_COMMIT_MESSAGE" value="add s and n" />
+    <MESSAGE value="fix bug about n and s" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug about n and s" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -383,9 +391,9 @@
         <state relative-caret-position="1992">
           <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
           <folding>
-            <marker date="1520869800152" expanded="true" signature="7497:7508" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7642:7653" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7821:7831" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7599:7610" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7750:7761" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7960:7970" ph="..." />
           </folding>
         </state>
       </provider>
@@ -428,9 +436,9 @@
         <state relative-caret-position="2064">
           <caret line="91" column="32" lean-forward="true" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
           <folding>
-            <marker date="1520869800152" expanded="true" signature="7497:7508" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7642:7653" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7821:7831" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7599:7610" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7750:7761" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7960:7970" ph="..." />
           </folding>
         </state>
       </provider>
@@ -473,9 +481,9 @@
         <state relative-caret-position="5688">
           <caret line="242" column="40" lean-forward="true" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
           <folding>
-            <marker date="1520869800152" expanded="true" signature="7497:7508" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7642:7653" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7821:7831" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7599:7610" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7750:7761" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7960:7970" ph="..." />
           </folding>
         </state>
       </provider>
@@ -509,9 +517,9 @@
         <state relative-caret-position="4704">
           <caret line="201" column="9" lean-forward="true" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
           <folding>
-            <marker date="1520869800152" expanded="true" signature="7497:7508" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7642:7653" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7821:7831" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7599:7610" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7750:7761" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7960:7970" ph="..." />
           </folding>
         </state>
       </provider>
@@ -542,6 +550,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catch_page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -552,21 +568,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CatchCourse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="203" column="17" lean-forward="false" selection-start-line="203" selection-start-column="17" selection-end-line="203" selection-end-column="17" />
+        <state relative-caret-position="601">
+          <caret line="184" column="27" lean-forward="true" selection-start-line="184" selection-start-column="27" selection-end-line="184" selection-end-column="27" />
           <folding>
-            <marker date="1520869800152" expanded="true" signature="7497:7508" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7642:7653" ph="..." />
-            <marker date="1520869800152" expanded="true" signature="7821:7831" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7599:7610" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7750:7761" ph="..." />
+            <marker date="1520906113238" expanded="true" signature="7960:7970" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>

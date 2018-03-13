@@ -168,9 +168,11 @@ class CatchCourse
                 $result = mb_convert_encoding($result, 'UTF-8', 'GBK,UTF-8,ASCII');
 
                 if (preg_match_all('/alert\(\'(.*?)\'\);/i', $result, $alt)) {
+                    $str = '';
                     foreach ($alt[1] as $massage) {
-                        self::pout($massage);
+                        $str = $str . $massage . '<br>';
                     }
+                    self::pout($str);
                 } elseif (preg_match_all('/三秒防刷/',$result)) {
                     self::pout("被三秒防刷,正在重试");
                     goto ReCatch;
@@ -247,17 +249,19 @@ class CatchCourse
         preg_match_all('/已选课程[\w\W]*?<tr class=\"datelisthead\"\>[\w\W]*?<\/tr\>(<tr\>[\w\W]*?<td\>[\w\W]*?<\/tr\>)?(<tr[\w\W]*?\>[\w\W]*?<td\>[\w\W]*?<\/tr\>)?/i', $content, $course);
 
         $sum = 0;
+        $str = '';
         if ($course[1][0]) {
-            self::pout('<span style="color: blue">'.$course[1][0].'</span>');
+            $str = $str . '<span style="color: blue">'.$course[1][0].'</span><br>';
             $sum = $sum +1;
         }
         if ($course[2][0]) {
-            self::pout('<span style="color: blue">'.$course[2][0].'</span>');
+            $str = $str . '<span style="color: blue">'.$course[2][0].'</span><br>';
             $sum = $sum +1;
         }
-        self::pout("当前共选中" .$sum . "门课程");
+        $str = $str . "当前共选中" .$sum . "门课程";
+        self::pout($str);
 
-        if ($sum >= 5) {
+        if ($sum >= 2) {
             exit("<span style='color: red'>选课完毕</span>");
         }
     }
